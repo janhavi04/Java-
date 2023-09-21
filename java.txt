@@ -1,0 +1,30 @@
+Why is JAVA platform independent?
+
+
+Java applications are called Write Once Run Anywhere (WORA). This means a programmer can develop Java code on one system and can expect it to run on any other Java-enabled system without any adjustment. This is all possible because of Java Virtual Machine.
+
+Write Once Run Anywhere
+
+The bytecode. Java compiler converts the Java programs into the class file (Byte Code) which is the intermediate language between source code and machine code. This bytecode is not platform specific and can be executed on any computer.
+
+In traditional programming languages like C, C++ when programs were compiled, they used to be converted into the code understood by the particular underlying hardware, so If we try to run the same code at another machine with different hardware, which understands different code will cause an error, so you have to re-compile the code to be understood by the new hardware.
+
+In Java, the program is not converted to code directly understood by Hardware, rather it is converted to bytecode(.class file), which is interpreted by JVM, so once compiled it generates bytecode file, which can be run anywhere (any machine) which has JVM( Java Virtual Machine) and hence it gets the nature of Write Once and Run Anywhere.
+
+Conclusion:
+
+In Java, when code compiled, creates a bytecode (.class file), which can be run in any machine which supports JVM. So once compiled it doesn’t require re-compilation at every machine it runs, Java Virtual Machine converts the bytecode to be understood by the underlying hardware and it is the nature which is called "Write Once and Run Anywhere".
+
+
+
+
+
+Important Points:
+
+In the case of Java, it is the magic of Bytecode that makes it platform independent.
+
+This adds to an important feature in the JAVA language termed as portability. Every system has its own JVM which gets installed automatically when the jdk software is installed. For every operating system separate JVM is available which is capable to read the .class file or byte code. ( The JVM converts that byte code into machine code using the Java interpreter/JIT Compiler. )
+
+
+
+An important point to be noted is that while JAVA is platform-independent language, the JVM is platform-dependent. Different JVM is designed for different OS and byte code is able to run on different OS.

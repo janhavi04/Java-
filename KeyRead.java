@@ -18,11 +18,18 @@ class KeyRead{
         //System.out.println("integer max value " + Integer.MAX_VALUE);
         //System.out.println("Integer Bytes  " + Integer.BYTES);
         
-        long l = 999_999_999_999L;
-        float f = 12.56f;
+        //long l = 999_999_999_999L;
+       // float f = 12.56f;
+        //int x = -5;
+//
+       // System.out.println(l);
+       // System.out.println(f);
+        //System.out.println(Integer .toBinaryString(x));
 
-        System.out.println(l);
-        System.out.println(f);
+
+        for(char c = 0x900; c<=0x970;c++){
+            System.out.print(c + " ");
+        }
     }
 
 }
