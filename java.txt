@@ -15,16 +15,10 @@ Conclusion:
 
 In Java, when code compiled, creates a bytecode (.class file), which can be run in any machine which supports JVM. So once compiled it doesn’t require re-compilation at every machine it runs, Java Virtual Machine converts the bytecode to be understood by the underlying hardware and it is the nature which is called "Write Once and Run Anywhere".
 
-
-
-
-
 Important Points:
 
 In the case of Java, it is the magic of Bytecode that makes it platform independent.
 
 This adds to an important feature in the JAVA language termed as portability. Every system has its own JVM which gets installed automatically when the jdk software is installed. For every operating system separate JVM is available which is capable to read the .class file or byte code. ( The JVM converts that byte code into machine code using the Java interpreter/JIT Compiler. )
-
-
 
 An important point to be noted is that while JAVA is platform-independent language, the JVM is platform-dependent. Different JVM is designed for different OS and byte code is able to run on different OS.
