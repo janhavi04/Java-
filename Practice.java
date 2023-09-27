@@ -125,13 +125,31 @@ class Practice{
                     System.out.println("Enter the amount you wish to deposit:");
                      amt = s.nextInt();
                     System.out.println("Deposit successful:");
+                    System.out.println("Do you want to exit? (yes/no)");
+                    String ans = s.nextLine();
+                    if(ans.equalsIgnoreCase("yes")){
+                        break;
+                    }
+                    else{
+                        System.out.println("To withdraw money press 1 , To deposit money press 2 and to check account balance press 3:");
+                         n = s.nextInt();
+                    }
                     break;
+                    
                 case 3:
                     System.out.println("Enter your pin:");
                      int pin = s.nextInt();
-                    
-                     
                     System.out.print("You have "+ rand.nextDouble(1000 , 10000));
+                    System.out.println(" ");
+                    System.out.println("Do you want to exit? (yes/no)");
+                     ans = s.nextLine();
+                    if(ans.equalsIgnoreCase("yes")){
+                        break;
+                    }
+                    else{
+                        System.out.println("To withdraw money press 1 , To deposit money press 2 and to check account balance press 3:");
+                         n = s.nextInt();
+                    }
                     
                     break;
                 default:
