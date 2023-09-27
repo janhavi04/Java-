@@ -1,5 +1,3 @@
-import java.lang.*;
-import java.util.*;
 
 // Write a program to calculate and print the sum of all even numbers between 1 and 100 using a while loop.
 // public class Practice {
@@ -108,56 +106,64 @@ import java.util.*;
 
 //Create a C++ program that simulates a basic ATM machine. Allow the user to withdraw money from their account, deposit money, and check their account balance. 
 //Use a `while` loop to keep the program running until the user chooses to exit.
-class Practice{
+import java.lang.*;
+import java.util.*;
 
-    public static void atmMachine(int n){
-        Scanner s = new Scanner(System.in);
-        Random rand = new Random();
-        boolean exit = false;
-        while (!exit){
-            switch (n) {
-                case 1:
-                    System.out.println("Enter the amount you wish to withdraw:");
-                    int amt = s.nextInt();
-                    System.out.println("Withdrawal successful:");
-                    break;
-                case 2:
-                    System.out.println("Enter the amount you wish to deposit:");
-                     amt = s.nextInt();
-                    System.out.println("Deposit successful:");
-                    break;
-                    
-                    
-                case 3:
-                    System.out.println("Enter your pin:");
-                     int pin = s.nextInt();
-                    System.out.print("You have "+ rand.nextDouble(1000 , 10000)); 
-                    break;
-                case 4: 
-                     System.out.println("Thank you for using My ATM Machine.");
-                    exit = true;
-                    break;
-                default:
-                System.out.println("Invalid choice. Please choose a valid option.");
-                    break;
+class Practice{
+   
+   public static void atm(){
+            boolean exit = false;
+            int intialAmount = 10000;
+            int amt;
+            //int balance = intialAmount;
+            Scanner scanner = new Scanner(System.in);
+           
+
+            while(!exit){
+                System.out.println("Choose an option:");
+                System.out.println("1. Withdraw Money");
+                System.out.println("2. Deposit Money");
+                System.out.println("3. Check Account Balance");
+                System.out.println("4. Exit");
+
+                int choose = scanner.nextInt();
+
+                switch(choose){
+                    case 1:
+                        System.out.println("Enter the amount you wish to withdraw:");
+                        amt = scanner.nextInt();
+                        System.out.println("Withdraw Successful");
+                        intialAmount = intialAmount-amt;
+                        System.out.println("Total balance: " + intialAmount);
+                        break;
+
+                        
+                    case 2:
+                        System.out.println("Enter the amount you wish to deposit:");
+                        amt = scanner.nextInt();
+                        System.out.println("Deposit Successful");
+                        intialAmount = intialAmount+amt;
+                        System.out.println("Total balance: " + intialAmount);
+                        break;
+
+                    case 3:
+                        System.out.print("Account Balance:" + intialAmount);
+                        break;
+                    case 4:
+                        System.out.println("Thank you for using our ATM");
+                        exit = true;
+                        break;
+                }
+
+
             }
 
-        }
-    }
+            
+
+   }
 public static void main(String[] args){
-    Scanner s = new Scanner(System.in);
-            System.out.println("Welcome to My ATM Machine:");
-            System.out.println("Choose an option:");
-            System.out.println("1. Withdraw Money");
-            System.out.println("2. Deposit Money");
-            System.out.println("3. Check Account Balance");
-            System.out.println("4. Exit");
-    int n = s.nextInt();
-    atmMachine(n);
-
-
-
+System.out.println("Welcome to MYATM");
+atm();
 
 }
-
 }
