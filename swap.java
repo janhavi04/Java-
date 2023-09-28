@@ -1,4 +1,4 @@
-import java.lang.*;
+
 import java.util.Scanner;
 
 class swap{
@@ -13,5 +13,7 @@ class swap{
         b = a^b;
         a = a^b;
         System.out.println("After swapping a is " +a+" and b is "+b);
+
+        s.close();
     }
 }

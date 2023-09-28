@@ -36,7 +36,7 @@ class season{
         int input = s.nextInt();
 
         checkSeason(input);
-
+        s.close();
 
     }
 }
