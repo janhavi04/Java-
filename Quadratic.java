@@ -1,4 +1,4 @@
-import java.lang.*;
+
 import java.util.*;
 
 /**
@@ -19,6 +19,7 @@ class Quadratic {
        
        System.out.println("1st root is :" + r1);
         System.out.println("2nd root is :" + r2);
+        s.close();
 
     } 
 }

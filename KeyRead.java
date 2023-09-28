@@ -1,5 +1,3 @@
-import java.lang.*;
-import java.util.*;
 
 class KeyRead{
     public static void main(String args[]){

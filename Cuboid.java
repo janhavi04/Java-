@@ -1,4 +1,4 @@
-import java.lang.*;
+
 import java.util.Scanner;
 
 /**
@@ -17,6 +17,6 @@ public class Cuboid {
         volume = length*breadth*height;
 
         System.out.println("Total Surface area of cuboid is " + area + "and the volume of cuboid is "+ volume);
-
+        s.close();
     }
 }
