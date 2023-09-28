@@ -1,6 +1,6 @@
 //printing hello world
 
-import java.lang.*;
+
 /**
  * hello
  */

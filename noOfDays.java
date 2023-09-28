@@ -55,6 +55,8 @@ public static void checkDays(int month,int year){
         year = s.nextInt();
         checkDays(month, year);
 
+        s.close();
+
     }
 }
 
