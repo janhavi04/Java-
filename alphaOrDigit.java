@@ -54,5 +54,7 @@ public static void checkChar(char lowerCaseInput){
 
         checkChar(lowerCaseInput);
 
+        s.close();
+
     }
 }

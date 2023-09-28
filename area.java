@@ -1,4 +1,4 @@
-import java.lang.*;
+
 import java.util.Scanner;
 
 class area{
@@ -18,6 +18,6 @@ class area{
         s = 0.5f*(s1+s2+s3);
         area = Math.sqrt(s*(s-s1)*(s-s2)*(s-s3));
         System.out.println("Area of a triangle is " + area);
-
+        sc.close();
     }
 }

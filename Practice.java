@@ -195,7 +195,7 @@
 
 
 
-import java.lang.*;
+
  import java.util.*;
 
 class Practice{
@@ -211,6 +211,7 @@ class Practice{
                 i++;
             }
 
+            s.close();
 
 
         

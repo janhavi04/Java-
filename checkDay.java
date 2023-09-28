@@ -27,6 +27,8 @@ public static void main(String[] args){
 
         check(input);
 
+        s.close();
+
 
     }
     
