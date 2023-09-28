@@ -106,64 +106,113 @@
 
 //Create a C++ program that simulates a basic ATM machine. Allow the user to withdraw money from their account, deposit money, and check their account balance. 
 //Use a `while` loop to keep the program running until the user chooses to exit.
-import java.lang.*;
-import java.util.*;
+// import java.lang.*;
+// import java.util.*;
 
-class Practice{
+// class Practice{
    
-   public static void atm(){
-            boolean exit = false;
-            int intialAmount = 10000;
-            int amt;
-            //int balance = intialAmount;
-            Scanner scanner = new Scanner(System.in);
+//    public static void atm(){
+//             boolean exit = false;
+//             int intialAmount = 10000;
+//             int amt;
+//             //int balance = intialAmount;
+//             Scanner scanner = new Scanner(System.in);
            
 
-            while(!exit){
-                System.out.println("Choose an option:");
-                System.out.println("1. Withdraw Money");
-                System.out.println("2. Deposit Money");
-                System.out.println("3. Check Account Balance");
-                System.out.println("4. Exit");
+//             while(!exit){
+//                 System.out.println("Choose an option:");
+//                 System.out.println("1. Withdraw Money");
+//                 System.out.println("2. Deposit Money");
+//                 System.out.println("3. Check Account Balance");
+//                 System.out.println("4. Exit");
 
-                int choose = scanner.nextInt();
+//                 int choose = scanner.nextInt();
 
-                switch(choose){
-                    case 1:
-                        System.out.println("Enter the amount you wish to withdraw:");
-                        amt = scanner.nextInt();
-                        System.out.println("Withdraw Successful");
-                        intialAmount = intialAmount-amt;
-                        System.out.println("Total balance: " + intialAmount);
-                        break;
+//                 switch(choose){
+//                     case 1:
+//                         System.out.println("Enter the amount you wish to withdraw:");
+//                         amt = scanner.nextInt();
+//                         System.out.println("Withdraw Successful");
+//                         intialAmount = intialAmount-amt;
+//                         System.out.println("Total balance: " + intialAmount);
+//                         break;
 
                         
-                    case 2:
-                        System.out.println("Enter the amount you wish to deposit:");
-                        amt = scanner.nextInt();
-                        System.out.println("Deposit Successful");
-                        intialAmount = intialAmount+amt;
-                        System.out.println("Total balance: " + intialAmount);
-                        break;
+//                     case 2:
+//                         System.out.println("Enter the amount you wish to deposit:");
+//                         amt = scanner.nextInt();
+//                         System.out.println("Deposit Successful");
+//                         intialAmount = intialAmount+amt;
+//                         System.out.println("Total balance: " + intialAmount);
+//                         break;
 
-                    case 3:
-                        System.out.print("Account Balance:" + intialAmount);
-                        break;
-                    case 4:
-                        System.out.println("Thank you for using our ATM");
-                        exit = true;
-                        break;
-                }
+//                     case 3:
+//                         System.out.print("Account Balance:" + intialAmount);
+//                         break;
+//                     case 4:
+//                         System.out.println("Thank you for using our ATM");
+//                         exit = true;
+//                         break;
+//                 }
 
 
-            }
+//             }
 
             
 
-   }
-public static void main(String[] args){
-System.out.println("Welcome to MYATM");
-atm();
+//    }
+// public static void main(String[] args){
+// System.out.println("Welcome to MYATM");
+// atm();
 
-}
-}
+// }
+// }
+
+
+//*Sum of Digits:** Write a program that calculates and prints the sum of the digits of a given integer using a while loop. For example, if the input is 12345, the output should be 15.
+// import java.lang.*;
+//  import java.util.*;
+
+// class Practice{
+//     public static void main(String[] args){
+
+//         int n = 1234,rem,sum =0;
+
+//         while(n>0){
+//             rem = n%10;
+//             sum = rem + sum;
+//             n /= 10;
+
+
+//         }
+//         System.out.println(sum);
+//     }
+// }
+
+
+//*Number Repeater:** Ask the user to enter a number and a count. Write a program that uses a while loop 
+//to print the number repeatedly for the specified count. For example, if the user enters 5 and 3, the program should print "5 5 5."
+
+
+
+import java.lang.*;
+ import java.util.*;
+
+class Practice{
+     public static void main(String[] args){
+            Scanner s = new Scanner(System.in);
+            System.out.println("Enter the number and count:");
+            int num = s.nextInt();
+            int count = s.nextInt();
+            int i = 1;
+
+            while(i<=count){
+                System.out.print(num + " ");
+                i++;
+            }
+
+
+
+        
+     }
+    }
