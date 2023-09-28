@@ -52,21 +52,27 @@ public class arrayPractice {
 
 
 
-         //int A[] = {5,9,6,10,12,7,3,5,4,2};
-        // int temp = A[0];
+    //      int A[] = {5,9,6,10,12};//,7,3,5,4,2};
+    //     int temp =A[0];
+    //     int k = 2;
     
 
-        // for(int x:A)
-        //         System.out.print(x+" ");
-        //     System.out.println(" ");
-        // //   Rotating an array
-        // //   FOR LEFT SHIFT
-        // for(int i =1; i<A.length;i++){ 
-        //     A[i-1]= A[i];
+    //     for(int x:A)
+    //             System.out.print(x+" ");
+    //         System.out.println(" ");
+    //     // //   Rotating an array
+    //     // //   FOR LEFT SHIFT
+    //     while(k>0){
+    //         temp = A[0];
+    //     for(int i =1; i<A.length;i++){ 
+    //         A[i-1]= A[i];
+            
+    //     }
+    //     A[A.length-1]=temp; 
+    //     k--;
+    // }
 
-        // }
-
-        // A[A.length-1]=temp;
+       
 
         //  for(int x:A)
         //         System.out.print(x+" ");
@@ -74,16 +80,25 @@ public class arrayPractice {
 
         // //FOR RIGHT SHIFT
         int A[] = {5,9,6,10,12,7,3,5,4,2};
-         int temp = A[A.length-1];
+         int temp ;
+         int k = 2;
+     
+         
             for(int x:A)
                  System.out.print(x+" ");
              System.out.println(" ");
+        while(k>0){
+            temp = A[A.length-1];
         for(int i =A.length-1; i>0;i--){ 
             A[i] = A[i-1];
 
          }
+          A[0] = temp;
+         k--;
+        }
+        
 
-         A[0] = temp;
+        
 
          for(int x:A)
                System.out.print(x+" ");
