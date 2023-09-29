@@ -268,16 +268,16 @@ public class PatternQue {
 
     
     //Rhombus Pattern
-    int n = 6;
-    for(int i =n ; i>=1; i--){
-        for(int k = 1; k<=(n-i); k++){
-            System.out.print(" ");
-        }
-        for(int j =1; j<=n; j++){
-            System.out.print("*"+" ");
-        }
-        System.out.println("");
-    }
+    // int n = 6;
+    // for(int i =n ; i>=1; i--){
+    //     for(int k = 1; k<=(n-i); k++){
+    //         System.out.print(" ");
+    //     }
+    //     for(int j =1; j<=n; j++){
+    //         System.out.print("*"+" ");
+    //     }
+    //     System.out.println("");
+    // }
 
     //Diamond Pattern
         // int  n =6;
@@ -301,7 +301,61 @@ public class PatternQue {
         //     System.out.println("");
         // }
         
+
+        //K Pattern
+        //     int n =6;
+        // for(int i = 1 ; i<=n; i++){
+        //     for(int j =n ; j>=i;j--){
+        //         System.out.print("*"+" ");
+        //     }
+        //     System.out.println("");
+        // }
+        // for(int i = 2 ; i<=n; i++){
+        //     for(int j =1 ; j<=i;j++){
+        //         System.out.print("*"+" ");
+        //     }
+        //     System.out.println("");
+        // }
+
+
+        //Mirror Image Triangle Pattern
+
+        // int n= 6;
+        //  for(int i =n ; i>=1; i--){
+        //     for(int k = 1; k<=(n-i); k++){
+        //         System.out.print(" ");
+        //     }
+        //     for(int j = 1; j<=i; j++){
+        //         System.out.print("*" + " ");
+        //     }
+        //     System.out.println("");
+        // }
+        // for(int i =2 ; i<=n; i++){
+        //     for(int k = 1; k<=(n-i); k++){
+        //         System.out.print(" ");
+        //     }
+        //     for(int j = 1; j<=i; j++){
+        //         System.out.print("*" + " ");
+        //     }
+        //     System.out.println("");
+        // }
         
+       
+       
+        //Hollow Reverse Traingle
+        
+        int n =6;
+
+        for(int i =n ; i>=1; i--){
+                    for(int k = 1; k<=(n-i); k++){
+                        System.out.print(" ");
+                    }
+                    for(int j = 1; j<=i; j++){
+                        System.out.print("*" + " ");
+                    }
+                    System.out.println("");
+                }
+                
         
        
 
