@@ -250,22 +250,7 @@ public class PatternQue {
         
         // }
 
-        //Palindrome Triangular
-    //    int n = 6;
-    //         for(int i =1; i<=n; i++){
-
-    //             for(int j = 1;j<=2*(n-i); j++){
-    //                 System.out.print(" ");
-    //             }
-    //             for(int j = i; j>=i; j--){
-    //                 System.out.print(j+" ");
-    //             }
-    //             for(int j = 2; j<=i; j++){
-    //                 System.out.print(j+" ");
-    //             }
-    //             System.out.println("");
-    //         }
-
+    
     
     //Rhombus Pattern
     // int n = 6;
@@ -341,24 +326,73 @@ public class PatternQue {
         // }
         
        
-       
-        //Hollow Reverse Traingle
-        
-        int n =6;
+         //  Palindrome Triangular
+    //    int n = 6;
+    //         //outer loop for no. of rows
+    //         for(int i =1; i<=n; i++){
+    //             //for spaces
+    //             for(int k = 1 ; k<= 2*(n-i);k++){
+    //                 System.out.print(" ");
 
-        for(int i =n ; i>=1; i--){
-                    for(int k = 1; k<=(n-i); k++){
-                        System.out.print(" ");
-                    }
-                    for(int j = 1; j<=i; j++){
-                        System.out.print("*" + " ");
-                    }
-                    System.out.println("");
-                }
+    //             }
+    //             //innner loop part one
+    //             for(int j =i ; j>=1 ; j--){
+    //                 System.out.print(j+" ");
+    //             }
+    //             //inner loop part 2
+    //             for(int j = 2; j<= i;j++){
+    //                 System.out.print(j+ " ");
+    //             }
+
+    //           System.out.println(""); 
+    //     }
+
+       
+        //Reverse left triangle
+       
+        // int  n =6;
+        // for(int i =n; i>=1;i--){
+        //       for(int k =1; k<=(n-i);k++){
+        //         System.out.print(" ");
+        //     }
+            
+        //     for(int j =1; j<=i; j++){
+        //         System.out.print("*");
+        //     }
+          
+        //     System.out.println("");
+        // }
+
+        //Reverse Number Triangle Pattern
+
+        int n =4;
+        
+        for(int i = 1; i<=n;i++){
+            for(int k =1; k<i;k++){
+                System.out.print(" ");
+            }
+            for(int j = i;j<=n;j++){
+                System.out.print(j+ " ");    
+            }
+            System.out.println( "");
+           
+            
+        }
+        
+ //Hollow Reverse Triangle
+        
+        // int n =6;
+
+        // for(int i =n ; i>=1; i--){
+        //             for(int k = 1; k<=(n-i); k++){
+        //                 System.out.print(" ");
+        //             }
+        //             for(int j = 1; j<=i; j++){
+        //                 System.out.print("*" + " ");
+        //             }
+        //             System.out.println("");
+        //         }
                 
-        
-       
-
        
 
 }
