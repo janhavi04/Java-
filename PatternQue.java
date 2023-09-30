@@ -348,7 +348,7 @@ public class PatternQue {
     //     }
 
        
-        //Reverse left triangle
+        //********************************Reverse left triangle
        
         // int  n =6;
         // for(int i =n; i>=1;i--){
@@ -363,42 +363,155 @@ public class PatternQue {
         //     System.out.println("");
         // }
 
-        //Reverse Number Triangle Pattern
+        //***************************Reverse Number Triangle Pattern****************************
 
-        int n =4;
+        // int n =4;
         
-        for(int i = 1; i<=n;i++){
-            for(int k =1; k<i;k++){
-                System.out.print(" ");
-            }
-            for(int j = i;j<=n;j++){
-                System.out.print(j+ " ");    
-            }
-            System.out.println( "");
+        // for(int i = 1; i<=n;i++){
+        //     for(int k =1; k<i;k++){
+        //         System.out.print(" ");
+        //     }
+        //     for(int j = i;j<=n;j++){
+        //         System.out.print(j+ " ");    
+        //     }
+        //     System.out.println( "");
            
             
-        }
-        
- //Hollow Reverse Triangle
-        
-        // int n =6;
-
-        // for(int i =n ; i>=1; i--){
-        //             for(int k = 1; k<=(n-i); k++){
-        //                 System.out.print(" ");
-        //             }
-        //             for(int j = 1; j<=i; j++){
-        //                 System.out.print("*" + " ");
-        //             }
-        //             System.out.println("");
-        //         }
-                
+        // }
        
+//Triangle
+//            int  n =6;
+//         for(int i =1; i<=n;i++){
+//               for(int k =1; k<=(n-i);k++){
+//                 System.out.print(" ");
+//             }
+            
+//             for(int j =1; j<=i; j++){
+//                 System.out.print("*" + " ");
+//             }
+          
+//             System.out.println("");
+//         }
+// }
 
-}
+//********************Hollow left pyramid******************** */
+    // int n = 6;
+    // for(int i = 1; i<=n;i++){
+    //     for(int j = 1; j<=i;j++){
+    //         if(i == n || j ==1 || i ==j)
+    //             System.out.print("*");
+    //         else
+    //             System.out.print(" ");
+    //     }
+    //     System.out.println("");
+    // }
+ 
 
 
-}
+    //********************Hollow right pyramid******************** */
+    // int n = 6;
+    // for(int i = 1; i<=n;i++){
+    //     for(int j = i; j<=n;j++){
+    //         if(i == 1 || j == i || j ==n)
+    //             System.out.print("*");
+    //         else
+    //             System.out.print(" ");
+    //     }
+    //     System.out.println("");
+    // }
+           
+    
+    //********************Hollow hill pyramid******************** */
+    //   int  n =5;
+    //     for(int i =1; i<=n;i++){
+    //           for(int k =1; k<=2*(n-i);k++){
+    //             System.out.print(" ");
+    //         }
+            
+    //         for(int j =1; j<i; j++){
+    //             if(i == n || j ==1)
+    //             System.out.print("* ");
+    //             else
+    //             System.out.print("  ");
+    //         }
+    //         for(int j =1; j<=i; j++){
+    //             if( i == n || j == i)
+    //             System.out.print("* ");
+    //             else
+    //             System.out.print("  ");
+    //         }
+    //         System.out.println("");
+    //     }
+
+
+        //Hollow Diamond
+
+
+
+
+         int n = 6;
+            //outer loop for no. of rows
+            for(int i =1; i<=n; i++){
+                //for spaces
+                for(int k = 1 ; k<= 2*(n-i);k++){
+                    System.out.print(" ");
+
+                }
+                //innner loop part one
+                for(int j =i ; j>=1 ; j--){
+                    if(j == 1)
+                    System.out.print("*"+" ");
+                    else
+                    System.out.print(" ");
+                }
+                //inner loop part 2
+                for(int j = 2; j<= i;j++){
+                     if(j ==i)
+                    System.out.print("*"+" ");
+                    else
+                    System.out.print(" ");
+                   
+                }
+
+              System.out.println(""); 
+        }
+
+        for(int i =n-1; i>=1; i--){
+                //for spaces
+                for(int k = 1 ; k<= 2*(n-i);k++){
+                    System.out.print(" ");
+
+                }
+                //innner loop part one
+                for(int j =i ; j>=1 ; j--){
+                     if(j == i)
+                    System.out.print("*"+" ");
+                    else
+                    System.out.print(" ");
+                    
+                }
+                //inner loop part 2
+                for(int j = 2; j<= i;j++){
+                     if(j == n)
+                    System.out.print("*"+" ");
+                    else
+                    System.out.print(" ");
+                  
+                }
+
+              System.out.println(""); 
+        }
+
+
+    }
+  
+
+} 
+       
+           
+
+    
+
 
 
     
