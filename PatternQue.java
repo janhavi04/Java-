@@ -449,58 +449,7 @@ public class PatternQue {
 
 
 
-         int n = 6;
-            //outer loop for no. of rows
-            for(int i =1; i<=n; i++){
-                //for spaces
-                for(int k = 1 ; k<= 2*(n-i);k++){
-                    System.out.print(" ");
-
-                }
-                //innner loop part one
-                for(int j =i ; j>=1 ; j--){
-                    if(j == 1)
-                    System.out.print("*"+" ");
-                    else
-                    System.out.print(" ");
-                }
-                //inner loop part 2
-                for(int j = 2; j<= i;j++){
-                     if(j ==i)
-                    System.out.print("*"+" ");
-                    else
-                    System.out.print(" ");
-                   
-                }
-
-              System.out.println(""); 
-        }
-
-        for(int i =n-1; i>=1; i--){
-                //for spaces
-                for(int k = 1 ; k<= 2*(n-i);k++){
-                    System.out.print(" ");
-
-                }
-                //innner loop part one
-                for(int j =i ; j>=1 ; j--){
-                     if(j == i)
-                    System.out.print("*"+" ");
-                    else
-                    System.out.print(" ");
-                    
-                }
-                //inner loop part 2
-                for(int j = 2; j<= i;j++){
-                     if(j == n)
-                    System.out.print("*"+" ");
-                    else
-                    System.out.print(" ");
-                  
-                }
-
-              System.out.println(""); 
-        }
+        
 
 
     }

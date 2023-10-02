@@ -52,16 +52,18 @@ public class arrayPractice {
 
 
 
-    //      int A[] = {5,9,6,10,12};//,7,3,5,4,2};
+    //      int A[] = {5,9,6,10,12,7,3,5,4,2};
     //     int temp =A[0];
-    //     int k = 2;
+    //     int k = 5;
     
 
     //     for(int x:A)
     //             System.out.print(x+" ");
     //         System.out.println(" ");
-    //     // //   Rotating an array
-    //     // //   FOR LEFT SHIFT
+
+
+    // //     // //   Rotating an array
+    // //     // //   FOR LEFT SHIFT
     //     while(k>0){
     //         temp = A[0];
     //     for(int i =1; i<A.length;i++){ 
@@ -71,38 +73,32 @@ public class arrayPractice {
     //     A[A.length-1]=temp; 
     //     k--;
     // }
+    //     for(int x:A)
+    //             System.out.print(x+" ");
+    //         System.out.println(" ");
 
-       
-
-        //  for(int x:A)
-        //         System.out.print(x+" ");
-        //     System.out.println(" ");
-
-        // //FOR RIGHT SHIFT
-        int A[] = {5,9,6,10,12,7,3,5,4,2};
-         int temp ;
-         int k = 2;
+        //FOR RIGHT SHIFT
+        // int A[] = {5,9,6,10,12,7,3,5,4,2};
+        //  int temp ;
+        //  int k = 2;
      
          
-            for(int x:A)
-                 System.out.print(x+" ");
-             System.out.println(" ");
-        while(k>0){
-            temp = A[A.length-1];
-        for(int i =A.length-1; i>0;i--){ 
-            A[i] = A[i-1];
+        //     for(int x:A)
+        //          System.out.print(x+" ");
+        //      System.out.println(" ");
+        // while(k>0){
+        //     temp = A[A.length-1];
+        // for(int i =A.length-1; i>0;i--){ 
+        //     A[i] = A[i-1];
 
-         }
-          A[0] = temp;
-         k--;
-        }
-        
+        //  }
+        //   A[0] = temp;
+        //  k--;
+        // }
 
-        
-
-         for(int x:A)
-               System.out.print(x+" ");
-        System.out.println(" ");
+        //  for(int x:A)
+        //        System.out.print(x+" ");
+        // System.out.println(" ");
             
         //Inserting an element
 
@@ -127,44 +123,48 @@ public class arrayPractice {
 
         // for(int i = n;i>index;i--){
         //     A[i] = A[i-1];
+            
         // }
+
 
         // A[index] = x;
 
-        //   for(int i =0; i<n; i++){
+        //   for(int i =0; i<=n; i++){
         //     System.out.print(A[i]+ ",");
 
         // }
 
-        //DEleting an element
+      //  DEleting an element
 
-        // int A[] = new int[10];
+        int A[] = new int[10];
         
-        // A[0] = 5;
-        // A[1] = 9;
-        // A[2] = 6;
-        // A[3] = 10;
-        // A[4] = 12;
-        // A[5] = 7;
+        A[0] = 5;
+        A[1] = 9;
+        A[2] = 6;
+        A[3] = 10;
+        A[4] = 12;
+        A[5] = 7;
 
-        // int n =6;
+        int n =6;
 
-        // for(int i =0; i<n; i++){
-        //      System.out.print(A[i]+ "");
+        for(int i =0; i<n; i++){
+             System.out.print(A[i]+ " ");
 
-        //  }
-        //  System.out.println(" ");
+         }
+         System.out.println(" ");
 
-        //  int index =1;
+         int index =1;
 
-        //  for(int i =2;i<=5;i++){
-        //     A[i-1] = A[i];
-        //  }
-        //  System.out.println();
+         for(int i =2;i<=5;i++){
+            A[i-1] = A[i];
+              System.out.print(A[i]+ " ");
 
-        //  for(int i =0; i<5;i++){
-        //     System.out.print(A[i]+ " ");
-        //  }
+         }
+         System.out.println();
+
+         for(int i =0; i<5;i++){
+            System.out.print(A[i]+ " ");
+         }
 
 
 /*************SET THREE***************** */

@@ -1,11 +1,9 @@
-  // int n = 6;
-    // for(int i = 1; i<=n;i++){
-    //     for(int j = 1; j<=i;j++){
-    //         if(i == n || j ==1 || i ==j)
-    //             System.out.print("*");
-    //         else
-    //             System.out.print(" ");
-    //     }
-    //     System.out.println("");
-    // }
- 
+ // String arr[] = {"Java", "Python", "Pascal", "CPP","Basic","ADA"};
+
+        // java.util.Arrays.sort(arr);
+
+
+        // for(String x :arr){
+        //     System.out.println(x + " ");
+        // }
+    
