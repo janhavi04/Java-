@@ -1,9 +1,1 @@
- // String arr[] = {"Java", "Python", "Pascal", "CPP","Basic","ADA"};
-
-        // java.util.Arrays.sort(arr);
-
-
-        // for(String x :arr){
-        //     System.out.println(x + " ");
-        // }
-    
+Subject s = new Subject("A1", "Neet", 720, 450);
