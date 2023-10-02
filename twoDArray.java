@@ -7,7 +7,7 @@ public class twoDArray {
 
         //int A[][] = new int [5][5];
 
-        //int B[][] = {{1,2,3},{2,4,6},{1,3,5}};
+      int B[][] = {{1,2,3},{2,4,6},{1,3,5}};
 
         // int C[][];
         // C =new int[5][5];
@@ -20,13 +20,13 @@ public class twoDArray {
         // F = new int [5] [5];    
 
         // int [] G,H,I,J; //Multiple single dimensional array
-        
-        // for(int i = 0; i <B.length; i++){
-        //     for(int j = 0; j<B[0].length; j++){
-        //         System.out.print(B[i][j] + " ");
-        //     }
-        //     System.out.println("");
-        // }
+        System.out.println(B[0].length);
+        for(int i = 0; i <B.length; i++){
+            for(int j = 0; j<B[0].length; j++){
+                System.out.print(B[i][j] + " ");
+            }
+            System.out.println("");
+        }
 
         // //for each loop
 
@@ -96,14 +96,14 @@ public class twoDArray {
         //     }
         //SORTING ARRAY OF STRINGS
             
-        String arr[] = {"Java", "Python", "Pascal", "CPP","Basic","ADA"};
+        // String arr[] = {"Java", "Python", "Pascal", "CPP","Basic","ADA"};
 
-        java.util.Arrays.sort(arr);
+        // java.util.Arrays.sort(arr);
 
 
-        for(String x :arr){
-            System.out.println(x + " ");
-        }
+        // for(String x :arr){
+        //     System.out.println(x + " ");
+        // }
     
     
     
