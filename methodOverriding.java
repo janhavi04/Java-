@@ -1,31 +1,30 @@
-// /**
-//  * methodOverriding
-//  */
 
-//  class Super{
-//     public void display(){
-//         System.out.println("Super Class Display");
-//     }
-//  }
-//  class Sub extends Super{
-//     public void display(){
-//         System.out.println("Sub Class Display");
-//     }
-//  }
-// public class methodOverriding {
-//     public static void main(String[] args){
-//         // Super sup = new Super();
-//         // sup.display();
+ class Super{
+ public void display(){
+        System.out.println("Super Class Display");
+        
+    }
+ }
+ class Sub extends Super{
+    public void display(){
+        System.out.println("Sub Class Display");
+      
+    }
+ }
+public class methodOverriding {
+    public static void main(String[] args){
+        Super sup = new Super();
+        sup.display();
 
-//         // Sub s = new Sub();
-//         // s.display();
+        Sub s = new Sub();
+        s.display();
 
-//         //Dynamic method dispatch
-//         Super sup = new Sub();
-//         sup.display();
-//     }
+       // Dynamic method dispatch
+        // Super sup = new Sub();
+        // sup.display();
+    }
     
-// }
+}
 
 
 
@@ -69,35 +68,35 @@
 // }
 
 //***********************CAR EXAMPLE************************** */
-class Car{
-    void start(){
-        System.out.println("Car started");
-    }
-    void accelerate(){
-         System.out.println("Car is accelerated");
-    }
-    void changeGear(){
-         System.out.println("Car gear changed");
-    }
-}
-class LuxuryCar extends Car{
+// class Car{
+//     void start(){
+//         System.out.println("Car started");
+//     }
+//     void accelerate(){
+//          System.out.println("Car is accelerated");
+//     }
+//     void changeGear(){
+//          System.out.println("Car gear changed");
+//     }
+// }
+// class LuxuryCar extends Car{
     
-    void changeGear(){
-         System.out.println("Automatic Gear");
+//     void changeGear(){
+//          System.out.println("Automatic Gear");
 
-    }
-    void openRoof(){
-         System.out.println("Sun roof is opened");
-    }
+//     }
+//     void openRoof(){
+//          System.out.println("Sun roof is opened");
+//     }
 
-}
-public class methodOverriding {
-    public static void main(String[] args){
-        Car c = new LuxuryCar();
-        c.start();
-        c.accelerate();
+// }
+// public class methodOverriding {
+//     public static void main(String[] args){
+//         Car c = new LuxuryCar();
+//         c.start();
+//         c.accelerate();
       
-        c.changeGear();
+//         c.changeGear();
 
-    }
-}
+//     }
+// }
