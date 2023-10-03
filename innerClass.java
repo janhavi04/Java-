@@ -13,15 +13,18 @@ class Outer{
         }
     }
     void outerDisplay(){
-        Inner i = new Inner();
+        Inner i = new Inner();//Outer class will use the object of inner class
         i.innerDisplay();
-        System.out.println(i.y);
+        System.out.println(i.y); 
 
     }
 }
 public class innerClass {
 
     public static void main(String[] args){
+        Outer o = new Outer();
+        o.outerDisplay();
+        Outer.Inner i = new Outer().new Inner(); //Accessing inner class outside the class
 
-    }
+    } //Compiler will generate Outer.class and Outer$inner.class
 }
