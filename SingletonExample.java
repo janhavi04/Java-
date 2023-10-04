@@ -1,30 +1,49 @@
 class CoffeeMachine{
-    private float coffeeQty;
-    private float milkQty;
     private float waterQty;
     private float sugarQty;
+    private float coffeeQty;
+    private float milkQty;
 
-    static private CoffeeMachine my = null;
-
+   //static private CoffeeMachine my = null; //my serves as a reference to the single instance of the CoffeeMachine class.
+    static int count =0;
     private CoffeeMachine(){
-        coffeeQty =1;
-        sugarQty = 1;
         waterQty =1;
+        sugarQty =1;
+        coffeeQty =1;
         milkQty =1;
     }
-    public void fillWater(float qty){
+
+    void fillSugar(int qty){
+        sugarQty = qty;
+
+    }
+    void fillWater(int qty){
         waterQty =qty;
     }
-    public void fillSugar(float qty){
-        sugarQty =qty;
+
+    public float refillCoffee(){
+        return 0.15f;
     }
-    public float getCoffee(){
-        return 0.23f;
-    }
-    static CoffeeMachine getInstance(){
-        if(my == null)
-            my = new CoffeeMachine();
-        return my;
+
+    //Here The getInstance() method doesn't specify a return type 
+    //because it returns an instance of the CoffeeMachine class itself. 
+    //In Java, when a method returns an instance of its own class (in this case, an instance of the CoffeeMachine class), 
+    //it is known as a factory method or a static factory method.
+
+
+    static public CoffeeMachine getInstance(){
+        // if(my == null){
+        //     my = new CoffeeMachine();
+        // }
+        // return my;
+
+        //Limit is set to 5
+        if(count<5){
+            count ++;
+             return new CoffeeMachine();
+        }
+        else
+            return null;
     }
 }
 public class SingletonExample {
@@ -35,8 +54,8 @@ public class SingletonExample {
 
         System.out.println(m1 + " " +m2+ " "+m3);
 
-        if(m1 ==m2 && m1 ==m3)
-        System.out.println("SAME"); 
+        // if(m1 ==m2 && m1 ==m3)
+        // System.out.println("SAME"); 
         }
     
 }

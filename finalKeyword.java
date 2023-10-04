@@ -1,11 +1,11 @@
 
 class My{
-    //final Variable
+    //final Variable cannot be changed
     final int MIN =1; //1st method of initializing
     final int NORMAL;
     final int MAX;
 
-    static{
+    {
         NORMAL =5; //2nd method of initializing
     }
 
@@ -21,10 +21,19 @@ class Super{
 }
 
 class Sub extends Super{
-    void meth1(){
+    // final methods cannot overriden a method
+    // void meth1(){
+    //     System.out.println("WElcome");
+    // }
+    void meth2(){
         System.out.println("WElcome");
     }
 }
+//final class cannot be extended
+// final class Super1{
+
+// }
+// class Sub2 extends Super1{}
 public class finalKeyword {
 
     public static void main(String [] args){
