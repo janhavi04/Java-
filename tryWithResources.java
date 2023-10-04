@@ -1,0 +1,7 @@
+/**
+ * tryWithResources
+ */
+public class tryWithResources {
+
+  
+}
