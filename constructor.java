@@ -66,10 +66,10 @@ public class constructor
        // Rectangle r = new Rectangle();
 
 
-       Cylinder c = new Cylinder(10);
-      c.setHeight(10);
-      c.setRadius(7);
-       c.setDimensions(10, 7);
+       Cylinder c = new Cylinder();
+      //c.setHeight(10);
+   // c.setRadius(7);
+     //c.setDimensions(10, 17);
 
        double lidArea = c.lidArea();
        double totalSurfaceArea = c.totalSurfaceArea();

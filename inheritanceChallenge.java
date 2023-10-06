@@ -3,7 +3,9 @@ class Account {
     public long accNo;
     public String name, phoneno, address, dob;
     public double balance;
-
+    
+    
+    //Constructor
     public Account(long accNo, String name, String phoneno, String address, String dob, double balance) {
         this.accNo = accNo;
         this.name = name;
