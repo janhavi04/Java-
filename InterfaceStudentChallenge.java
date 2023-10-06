@@ -35,10 +35,13 @@ public class InterfaceStudentChallenge {
 
     public static void main(String[] args){
         Store s = new Store();
-        Customer c1 = new Customer("John");
-        Customer c2 = new Customer("SMith");
+
+        String []customerName = {"Jane", "John","Smith" ,"Alice","Albert"};
+      
+        for(String name: customerName){
+        Customer c1 = new Customer(name);
         s.register(c1);
-        s.register(c2);
+        }
         s.inviteSale();
     }
 }
