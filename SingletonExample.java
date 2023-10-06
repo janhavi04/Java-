@@ -4,8 +4,8 @@ class CoffeeMachine{
     private float coffeeQty;
     private float milkQty;
 
-   //static private CoffeeMachine my = null; //my serves as a reference to the single instance of the CoffeeMachine class.
-    static int count =0;
+ static private CoffeeMachine my = null; //my serves as a reference to the single instance of the CoffeeMachine class.
+   // static int count =0;
     private CoffeeMachine(){
         waterQty =1;
         sugarQty =1;
@@ -32,19 +32,20 @@ class CoffeeMachine{
 
 
     static public CoffeeMachine getInstance(){
-        // if(my == null){
-        //     my = new CoffeeMachine();
-        // }
-        // return my;
+        if(my == null){
+            my = new CoffeeMachine();
+        }
+        return my;
 
         //Limit is set to 5
-        if(count<5){
-            count ++;
-             return new CoffeeMachine();
-        }
-        else
-            return null;
-    }
+        // if(count<5){
+        //     count ++;
+        //      return new CoffeeMachine();
+        // }
+    //     else
+    //         return null;
+    // }
+}
 }
 public class SingletonExample {
     public static void main(String[]args){
