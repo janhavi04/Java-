@@ -1,94 +1,97 @@
-class whiteBoard
-{
+/**
+ * InterThreadChallenge
+ */
+class whiteBoard {
     String text;
     int noOfStudent = 0;
-    int count =0;
+    int count = 0;
 
- public void attendance(){
+    public void attendance() {
         noOfStudent++;
     }
 
-   synchronized public void write(String text){
-    System.out.println("Teacher is writing " + text);
-    while(count!=0){
-        try{wait();}catch(Exception e){}
+    synchronized public void write(String msg) {
 
-    this.text = text;
-    count = noOfStudent;
-    notifyAll();
+        System.out.println("Teacher is writing");
+        while (count != 0 || noOfStudent ==0 )
+            try {
+                wait();
+            } catch (Exception e) {
+            }
+        ;
+        text = msg;
+        count = noOfStudent;
+        notifyAll();
     }
 
-
-    }
-   synchronized public String read(){
-        while(count==0){
-            try{wait();}catch(Exception e){}
-        }
+    synchronized public String read() {
+        while (count == 0)
+            try {
+                wait();
+            } catch (Exception e) {
+            }
+        ;
         String t = text;
         count--;
-        if(count==0)
-            notify();
+        if (count == 0)
+            notifyAll();
         return t;
-
-
     }
-    
+
 }
 
-class Teacher extends Thread{
+class Teacher extends Thread {
     whiteBoard wb;
-    String notes[] = {"Java is a language", "It is OOPs", "It is Platform Independent", "It supports thread" , "end"};
+    String notes[] = { "Java is OOP language", "It supports Thread", "End" };
 
-    public Teacher (whiteBoard w){
+    public Teacher(whiteBoard w) {
         wb = w;
     }
 
-    public void run(){
-
-        for(int i =0;i<notes.length;i++){
+    public void run() {
+        for (int i = 0; i < notes.length; i++)
             wb.write(notes[i]);
-        }
 
     }
 }
 
-class Student extends Thread{
+class Student extends Thread {
+
     String name;
     whiteBoard wb;
-    public Student(String name, whiteBoard w){
+
+    public Student(String name, whiteBoard w) {
         this.name = name;
-        wb =w;
+        wb = w;
     }
 
-    public void run(){
+    public void run() {
         String text;
         wb.attendance();
-        do{
-            text = wb.read();
-            System.out.println(name + "Reading " + text);
-            System.out.flush();
-        }while(!text.equals("end"));
 
+        do {
+            text = wb.read();
+            System.out.println(name + " reading " + text);
+            System.out.flush();
+        } while (!text.equals("End"));
     }
 
 }
-public class InterThreadChallenge 
-{
-    public static void main(String[] args) 
-    {
 
-        whiteBoard w = new whiteBoard();
+public class InterThreadChallenge {
 
-        Teacher t = new Teacher(w);
+    public static void main(String[] args) {
 
-        Student s1 = new Student("1.Rohan", w);
-        Student s2 = new Student("2. Roy", w);
-        Student s3 = new Student("3.Steve", w);
+        whiteBoard wb = new whiteBoard();
+        Teacher t = new Teacher(wb);
+
+        Student s1 = new Student("John", wb);
+        Student s2 = new Student("Roy", wb);
 
         t.start();
 
         s1.start();
         s2.start();
-        s3.start();
+
     }
 }
