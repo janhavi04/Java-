@@ -57,7 +57,7 @@
 @SuppressWarnings("unchecked")
 class A{}
 class B extends  A{}
-class C extends A{}
+class C extends B{}
 class MyArray<T>
 
 {
@@ -76,7 +76,7 @@ class MyArray<T>
 public class generics
 {
     // generic methods
-    static void fun(MyArray<?> obj){
+    static void fun(MyArray<? super C> obj){
         obj.display();
         
     }
@@ -96,13 +96,10 @@ public class generics
         // show(new String[] {"Hi","BYE","Go"});
         // show(10,20,30,30);
         
-         MyArray <String> ma1 = new MyArray<>();
-         ma1.append("25");
-        ma1.append("HI");
-
-         MyArray <Integer> ma2 = new MyArray<>();
-         ma2.append(15);
-         ma2.append(52);
+         MyArray <B> ma1 = new MyArray<>();
+        
+         MyArray <C> ma2 = new MyArray<>();
+        
 
          fun(ma1);
          fun(ma2);

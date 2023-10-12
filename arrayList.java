@@ -1,6 +1,6 @@
 import java.util.*;
 
-import javax.swing.event.InternalFrameAdapter;
+
 
 class arrayList{
     public static void main(String [] args){
