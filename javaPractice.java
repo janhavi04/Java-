@@ -71,15 +71,76 @@ import java.util.*;
 // }
 
 
+// public class javaPractice {
+//     public static void main(String[] args){
+
+//         int my_array[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        
+//        for(int i = 0; i<my_array.length-1;i++){
+//         my_array[i] = my_array[i+1];
+//        }
+//         System.out.println(Arrays.toString(my_array));
+
+//     }
+// }
+
+//Reverse string
+
+// public class javaPractice {
+//     public static void main(String[] args){
+
+//         String rev = "Janhavi";
+
+//         for(int i = rev.length()-1; i>=0;i--){
+//             char str = rev.charAt(i);
+//             System.out.print(str);
+
+//         }
+//     }
+// }
+
+import java.util.*;
+
+
 public class javaPractice {
+    public static boolean isanagram(String str1 , String str2){
+
+        int n1 = str1.length();
+        int n2 = str2.length();
+
+        if(n1!=n2)
+             return false;
+
+        char arraystr1 [] = str1.toCharArray();
+        char arraystr2[] = str2.toCharArray();
+
+        Arrays.sort(arraystr1);
+        Arrays.sort(arraystr2);
+
+
+        for(int i =0; i<n1; i++){
+            if(arraystr1[i] != arraystr2[i])
+                return false;
+        }
+        return true;
+    }
+
+
+
+
     public static void main(String[] args){
 
-        int my_array[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        
-       for(int i = 0; i<my_array.length-1;i++){
-        my_array[i] = my_array[i+1];
-       }
-        System.out.println(Arrays.toString(my_array));
+        System.out.println("Enter 2 words:");
+        Scanner sc = new Scanner(System.in);
+
+        String str1,str2;
+        str1 = sc.nextLine();
+        str2 = sc.nextLine();
+
+        if(isanagram(str1 ,str2))
+            System.out.println("The strings are anagram.");
+        else
+        System.out.println("The strings are not anagram.");
 
     }
 }
